@@ -55,6 +55,6 @@ if __name__ == "__main__":
     bucket_name = "blt-employee-data"  # 🔁 Replace this with your bucket name
     destination_blob = "data/" + file_name  # Destination path in the bucket
 
-    data = generate_employee_data(num_employees=50)
+    data = generate_employee_data(num_employees=100)
     save_to_csv(data, file_name)
     upload_to_gcs(bucket_name, file_name, destination_blob)
